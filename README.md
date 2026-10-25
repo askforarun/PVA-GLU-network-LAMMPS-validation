@@ -5,6 +5,9 @@ networks with prescribed tetrafunctional junction connectivity. These are
 model-specific C--C-linked junction surrogates, not atom-for-atom models of
 experimental glutaraldehyde acetalization products.
 
+This is a standalone dataset and validation repository. It does not require
+signac, the original simulation project, or access to the source workspace.
+
 ## Dataset
 
 Each folder contains one coefficient-bearing LAMMPS data file compressed
@@ -23,7 +26,7 @@ production. They are not final production configurations. The data files
 include coordinates, topology, masses, and nonbonded and bonded coefficients.
 No additional force-field parameter file is required.
 
-`manifest.json` records source signac job IDs, statepoints, file sizes, atom
+`manifest.json` records source identifiers, composition/replica metadata, file sizes, atom
 counts, and compressed and uncompressed SHA-256 hashes. `SHA256SUMS` verifies
 the distributed compressed files:
 
@@ -52,8 +55,7 @@ is optional; the original check requested 16 ranks:
 mpirun -np 16 lmp -in in.validate -var data configurations/n21/replica2/data.anisocompression_lammps -var output /tmp/n21-replica2-checked.data
 ```
 
-The input reproduces the `run 0` initialization check from the signac
-operation `validate_lammps_postcrosslinked_simulation`. It initializes forces
+The included `run 0` input initializes forces
 and writes a new data file without advancing dynamics. Successful execution
 checks standalone readability and force-field initialization, not dynamical
 stability, equilibration, or mechanical validity.
