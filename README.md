@@ -64,6 +64,51 @@ configurations have already passed a new LAMMPS execution check. Compression,
 hash integrity, and required coefficient-section checks were performed for
 all distributed files.
 
+## Visualizing crosslinks in VMD / TopoTools
+
+`atom_types.csv` maps all ten numeric LAMMPS atom types to their GAFF2
+labels and elements. The crosslink is **bond type 18**, connecting:
+
+- **Atom type 9:** PVA terminal carbon, GAFF2 `c3`.
+- **Atom type 10:** GLU reactive carbon, GAFF2 `c6`.
+
+Types 9 and 10 are bookkeeping labels for reacted sites, not new elements
+or distinct nonbonded parameter sets. Their nonbonded coefficients match
+ordinary `c3` (type 1) and `c6` (type 6), respectively. Bond type 18 uses
+`U = K*(r-r0)^2`, with `K = 300.9 kcal mol^-1 angstrom^-2` and
+`r0 = 1.538 angstrom`. Bond type IDs and atom type IDs are different
+quantities. Identical bond coefficients alone do not identify a crosslink.
+
+After decompressing a dataset, start VMD and enter in its Tk Console:
+
+```tcl
+source /absolute/path/to/load_network.tcl
+load_pva_glu /absolute/path/to/data.anisocompression_lammps
+```
+
+The loader uses `topo readlammpsdata ... full`, preserves the imported
+bonds and numeric atom types, assigns element/name labels for display,
+and highlights type-9 carbons in blue and type-10 carbons in red.
+In Graphics > Representations, `type 9 10` selects the crosslink atoms.
+This selects atoms, not an isolated bond-type representation. The complete
+network is shown as heavy-atom lines; other bonds between selected atoms
+should not be mistaken for type-18 crosslinks. No distance-based bond
+guessing is needed. Periodic boundary-crossing bonds may appear as long
+lines in the wrapped cell; a percolating network cannot generally be made
+whole inside a single periodic image. Avoid overwriting simulation inputs
+with visualization exports.
+
+The exact type-18 endpoint mapping and counts can be checked reproducibly:
+
+```bash
+python check_crosslink_types.py
+```
+
+Expected crosslink counts per replica are 5400, 4200, and 3600 for `n=17`,
+21, and 25, respectively. The VMD loader itself requires VMD and TopoTools;
+it has not been GUI-tested on the export host.
+See the [official TopoTools documentation](https://www.ks.uiuc.edu/Research/vmd/plugins/topotools/).
+
 ## Rebuilding the export
 
 `prepare_dataset.py` regenerates the compressed dataset, manifest, and

@@ -1,0 +1,11 @@
+lammps_type,gaff2_type,element,description
+1,c3,C,Ordinary aliphatic carbon in PVA or GLU
+2,hc,H,Hydrogen attached to aliphatic carbon
+3,h1,H,Carbon-bound hydrogen with one electron-withdrawing substituent
+4,oh,O,PVA hydroxyl oxygen
+5,ho,H,PVA hydroxyl hydrogen
+6,c6,C,Ordinary GLU ring carbon
+7,os,O,GLU ether or acetal oxygen
+8,h2,H,Carbon-bound hydrogen with two electron-withdrawing substituents
+9,c3,C,PVA terminal carbon participating in a crosslink
+10,c6,C,GLU reactive carbon participating in a crosslink
