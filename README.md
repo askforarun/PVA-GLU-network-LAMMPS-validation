@@ -109,15 +109,3 @@ Expected crosslink counts per replica are 5400, 4200, and 3600 for `n=17`,
 it has not been GUI-tested on the export host.
 See the [official TopoTools documentation](https://www.ks.uiuc.edu/Research/vmd/plugins/topotools/).
 
-## Rebuilding the export
-
-`prepare_dataset.py` regenerates the compressed dataset, manifest, and
-checksums from a signac project containing the nine source files:
-
-```bash
-python prepare_dataset.py /path/to/hydrogel_simulation
-```
-
-It uses only the Python standard library and deterministic gzip headers.
-Generated uncompressed data, LAMMPS outputs, and logs are ignored by Git.
-No proprietary network-formation implementation or trajectories are included.
