@@ -1,0 +1,137 @@
+[
+  {
+    "n": 17,
+    "replica": 1,
+    "job_id": "1180c166f2e323e3e0efb9efd5931fbe",
+    "statepoint": {
+      "pva_chain_length": 17,
+      "replica": 1
+    },
+    "atoms": 371250,
+    "path": "configurations/n17/replica1/data.anisocompression_lammps.gz",
+    "source_bytes": 125230931,
+    "compressed_bytes": 36875143,
+    "source_sha256": "9a99477f218ca54d9ace3e90ed047fe25a32524896cbd76ad4cf557f034191b0",
+    "compressed_sha256": "b7f30e41ece707018d20e42ca9b19b986eef711a51bb84328447596ead0f4012"
+  },
+  {
+    "n": 17,
+    "replica": 2,
+    "job_id": "36f20d117e070ff3b04e5c4578e0e1f2",
+    "statepoint": {
+      "pva_chain_length": 17,
+      "replica": 2
+    },
+    "atoms": 371250,
+    "path": "configurations/n17/replica2/data.anisocompression_lammps.gz",
+    "source_bytes": 125233591,
+    "compressed_bytes": 36875651,
+    "source_sha256": "41d7204d43fcbd97dfd894cb18cfe6248bbf93d780a81f0bef1e5b10fd6393b5",
+    "compressed_sha256": "eb393d75617b70f509cc64449bcf0745df99c2fdd83d6cf8beb0d46fa3e2cf71"
+  },
+  {
+    "n": 17,
+    "replica": 3,
+    "job_id": "fa18f3f3d41b15c6e4f76a5ca35ab0eb",
+    "statepoint": {
+      "pva_chain_length": 17,
+      "replica": 3
+    },
+    "atoms": 371250,
+    "path": "configurations/n17/replica3/data.anisocompression_lammps.gz",
+    "source_bytes": 125228043,
+    "compressed_bytes": 36849192,
+    "source_sha256": "4a9ddde72908c983ef32ac59b629ded741f84ce0623d04587e42cbe0879f0b18",
+    "compressed_sha256": "ce57b2cdbfc4b7f286efbffc86730e1fdaffcbf6d6b6860d864c19e7d915ab3c"
+  },
+  {
+    "n": 21,
+    "replica": 1,
+    "job_id": "90a60f1bf1d090ebe85d2fc4030c00c7",
+    "statepoint": {
+      "pva_chain_length": 21,
+      "replica": 1
+    },
+    "atoms": 347550,
+    "path": "configurations/n21/replica1/data.anisocompression_lammps.gz",
+    "source_bytes": 116974534,
+    "compressed_bytes": 34542558,
+    "source_sha256": "1f2ab72f21da2139ba7c95cdbef22de5767c4218243251ff9890e4aa1a71ac4c",
+    "compressed_sha256": "2359a5a3131f64596be6f208ca57ffa226589ee65b36b2ee6e104d7f4b619c96"
+  },
+  {
+    "n": 21,
+    "replica": 2,
+    "job_id": "c79e87ba625438fd0a30a444f49df752",
+    "statepoint": {
+      "pva_chain_length": 21,
+      "replica": 2
+    },
+    "atoms": 347550,
+    "path": "configurations/n21/replica2/data.anisocompression_lammps.gz",
+    "source_bytes": 117193887,
+    "compressed_bytes": 34559416,
+    "source_sha256": "e9b1ee8698ca52cc670b431391ac365b66a729e7aef61ef497957c62cda1e654",
+    "compressed_sha256": "dc2c9c4511ddd4b970b01308176c48add2eb26fd062971a8702efacdc229c478"
+  },
+  {
+    "n": 21,
+    "replica": 3,
+    "job_id": "be6a871f135fecc5d0f9fe7ffa8f739e",
+    "statepoint": {
+      "pva_chain_length": 21,
+      "replica": 3
+    },
+    "atoms": 347550,
+    "path": "configurations/n21/replica3/data.anisocompression_lammps.gz",
+    "source_bytes": 117114476,
+    "compressed_bytes": 34548715,
+    "source_sha256": "2c0fffeae7d397250ec14b4f056e2df80ff8badc7579c494dc805637474fd453",
+    "compressed_sha256": "ac69d3ed4b54c40af984773c2618577b7a82004a1569669c6c3bc33a07efb627"
+  },
+  {
+    "n": 25,
+    "replica": 1,
+    "job_id": "4e4d5e4ec34deb6ef6af84bbbca1f5e4",
+    "statepoint": {
+      "pva_chain_length": 25,
+      "replica": 1
+    },
+    "atoms": 348300,
+    "path": "configurations/n25/replica1/data.anisocompression_lammps.gz",
+    "source_bytes": 116896371,
+    "compressed_bytes": 34424908,
+    "source_sha256": "26017ace3783d1ee9bf7ab8b7e2198177dc42ed40a63349ed9f643e7bf989920",
+    "compressed_sha256": "b50fe8ecc3695adfb3ae514f3ff979c45c22a587131d979390cb867a9f7ebf58"
+  },
+  {
+    "n": 25,
+    "replica": 2,
+    "job_id": "15b40f6a6e257fbb91f4868942bdb04a",
+    "statepoint": {
+      "pva_chain_length": 25,
+      "replica": 2
+    },
+    "atoms": 348300,
+    "path": "configurations/n25/replica2/data.anisocompression_lammps.gz",
+    "source_bytes": 116965969,
+    "compressed_bytes": 34469515,
+    "source_sha256": "b6b88aad82271b9d344760f127c040b1a83db6da4d591f1483a98ec636bb4fea",
+    "compressed_sha256": "2eabfdfc958378b5050c7e36dda00843f4ec76938020f42497fbc108585d0090"
+  },
+  {
+    "n": 25,
+    "replica": 3,
+    "job_id": "5a790a541c346ee9b876bd0a42a52b93",
+    "statepoint": {
+      "pva_chain_length": 25,
+      "replica": 3
+    },
+    "atoms": 348300,
+    "path": "configurations/n25/replica3/data.anisocompression_lammps.gz",
+    "source_bytes": 116975561,
+    "compressed_bytes": 34473167,
+    "source_sha256": "e681247b347bd80c16f13f3ee6cf20265ef29ddebea3bc0f849b095f1b47db5b",
+    "compressed_sha256": "2cc9cd455c3ae9ce0bbdff37cff081711caa662bdcd08579169ad596cd408710"
+  }
+]
